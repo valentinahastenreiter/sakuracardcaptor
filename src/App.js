@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Cards from './components/Cards'
+import './components/cards.css'
+import './App.css'
+import Titulo from './components/Titulo'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Titulo
+        titulo="Cartas Clow"
+        subtitulo="Meu Primeiro Projeto React do Zero"
+        imagem="https://occ-0-1723-1722.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABfkviFy0Z6_sQZ4mpIctWQeoa_tZCIWxLpmapnnu39bkes33nmE2GKt0m6y67kAtGLttmXIdwyi4-WD3REY2GMdDAz4uGFYzmHAO.png?r=598"
+      />
+      <Cards />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
